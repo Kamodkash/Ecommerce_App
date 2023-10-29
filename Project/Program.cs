@@ -19,6 +19,8 @@ builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 //builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 //builder.Services.AddScoped<ICoverTypeRepository, CoverTypeRepository>();
 
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
