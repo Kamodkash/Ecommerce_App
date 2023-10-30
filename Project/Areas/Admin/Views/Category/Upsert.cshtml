@@ -1,0 +1,9 @@
+﻿@model Project.Models.Category
+@{
+    ViewData["Title"] = "Upsert";
+    var title = Model.Id != 0 ? "Edit Category" : "New Category";
+    var saveUpdate = Model.Id != 0 ? "Update" : "Save";
+}
+
+<h1>Upsert</h1>
+
